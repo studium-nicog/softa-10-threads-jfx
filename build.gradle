@@ -1,25 +1,17 @@
 plugins {
 	id 'java'
 	id 'application'
-	id 'org.openjfx.javafxplugin' version '0.0.5'
-//	id "com.google.osdetector" version "1.4.0"
+	id 'org.openjfx.javafxplugin' version '0.0.9'
+	id 'idea'
 }
 
-/*
-Required only if JavaFX graphics extension is required
-def platformMap = [
-        osx    : 'mac',
-        windows: 'win',
-        linux  : 'linux'
-]
+group 'ohm.softa'
+version '1.0-SNAPSHOT'
 
-ext.platform = platformMap[osdetector.os] */
-
-sourceCompatibility = JavaVersion.VERSION_11
+mainClassName = 'ohm.softa.a10.App'
 
 repositories {
 	mavenCentral()
-	jcenter()
 }
 
 dependencies {
@@ -28,24 +20,20 @@ dependencies {
 	implementation("org.apache.logging.log4j:log4j-api:${log4j2Version}")
 	implementation("org.apache.logging.log4j:log4j-core:${log4j2Version}")
 
-	//implementation "org.openjfx:javafx-graphics:11.0.1:$platform"
-
-	testCompile("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
-	testRuntime("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
-	testRuntime("org.junit.jupiter:junit-jupiter-params:${junitVersion}")
+	testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-params:${junitVersion}")
 }
 
-// Define the main class for the application
-mainClassName = 'de.thro.inf.prg3.a10.App'
-
+javafx {
+	sdk = '/Users/riedhammerko/Library/Java/JavaVirtualMachines/javafx-sdk-17'
+	version = 17
+	modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
 
 test {
 	useJUnitPlatform()
 	testLogging {
 		events "passed", "skipped", "failed"
 	}
-}
-
-javafx {
-	modules = [ 'javafx.controls', 'javafx.fxml' ]
 }

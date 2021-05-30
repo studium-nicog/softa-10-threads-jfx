@@ -6,7 +6,7 @@ package java.lang {
     }
 }
 
-package de.thro.inf.prg3.a10.kitchen.workers {
+package ohm.softa.a10.kitchen.workers {
     +class Cook implements Runnable {
         -name: String
         -progressReporter: ProgressReporter

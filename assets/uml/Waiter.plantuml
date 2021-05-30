@@ -6,7 +6,7 @@ package java.lang {
     }
 }
 
-package de.thro.inf.prg3.a10.kitchen.workers {
+package ohm.softa.kitchen.workers {
 
     +class Waiter implements Runnable {
         -name: String
