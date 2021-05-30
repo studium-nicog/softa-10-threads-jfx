@@ -1,8 +1,8 @@
-package de.thro.inf.prg3.a10.controller;
+package ohm.softa.a10.controller;
 
-import de.thro.inf.prg3.a10.internals.displaying.ProgressReporter;
-import de.thro.inf.prg3.a10.kitchen.KitchenHatch;
-import de.thro.inf.prg3.a10.util.NameGenerator;
+import ohm.softa.a10.internals.displaying.ProgressReporter;
+import ohm.softa.a10.kitchen.KitchenHatch;
+import ohm.softa.a10.util.NameGenerator;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ProgressBar;
@@ -11,7 +11,7 @@ import javafx.scene.control.ProgressIndicator;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static de.thro.inf.prg3.a10.KitchenHatchConstants.*;
+import static ohm.softa.a10.KitchenHatchConstants.*;
 
 public class MainController implements Initializable {
 

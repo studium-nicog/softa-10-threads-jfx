@@ -1,7 +1,7 @@
-package de.thro.inf.prg3.a10.kitchen;
+package ohm.softa.a10.kitchen;
 
-import de.thro.inf.prg3.a10.model.Dish;
-import de.thro.inf.prg3.a10.model.Order;
+import ohm.softa.a10.model.Dish;
+import ohm.softa.a10.model.Order;
 
 /**
  * Kitchen hatch instance

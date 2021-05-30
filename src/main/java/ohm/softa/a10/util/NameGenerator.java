@@ -1,4 +1,4 @@
-package de.thro.inf.prg3.a10.util;
+package ohm.softa.a10.util;
 
 import com.google.gson.Gson;
 

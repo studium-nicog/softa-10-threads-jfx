@@ -1,4 +1,4 @@
-package de.thro.inf.prg3.a10;
+package ohm.softa.a10;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

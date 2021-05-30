@@ -1,4 +1,4 @@
-package de.thro.inf.prg3.a10;
+package ohm.softa.a10;
 
 public abstract class KitchenHatchConstants {
 

@@ -1,6 +1,6 @@
-package de.thro.inf.prg3.a10.internals.displaying;
+package ohm.softa.a10.internals.displaying;
 
-import de.thro.inf.prg3.a10.kitchen.KitchenHatch;
+import ohm.softa.a10.kitchen.KitchenHatch;
 import javafx.application.Platform;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;

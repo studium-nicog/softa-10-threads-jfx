@@ -1,6 +1,6 @@
 @startuml KitchenHatch
 
-package de.thro.inf.prg3.a10.kitchen {
+package ohm.softa.a10.kitchen {
     +interface KitchenHatch {
         getMaxDishes(): int
         getOrderCount(): int
